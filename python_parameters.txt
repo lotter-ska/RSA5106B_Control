@@ -1,0 +1,22 @@
+;---General
+DataFilename_base        = 'newsoft_'
+DataFilename_start_num   = 1
+DataFilename_end_num     = 1
+RBW_list                 = [10]                        ;[1, 10, 100, 1000, 10000]
+subtitle                 = 'Receiver Qualification'		 ;Description of measurement'
+polarisation             = 0 							 ;0=V polarisation, 1=H polarisation
+chamber_type             = 1 							 ;0=Anechoic Chamber, 1=Reverb Chamber
+
+;---Calibration Data
+AntGainFilenameNumber    = 7
+LnaGainFilenameNumber    = 2
+CableLossFilenameNumber  = 17
+
+;---Other
+range                    = 1.0                         ;Distance from DUT to receiving antenna
+culprit_distance         = 1.0                        ;Distance between Antenna Focus and DUT [m] (E.g. 10m or 30m for AP, 1m for Receiver and Digitiser)
+enclosure_attenuation    = 0.0                         ;Additional attenuation provided by enclosure [dB]
+
+;---Reverberation Chamber
+antenna_efficiency       = 0.8
+CCF_filename             = 'Equipment_Database\Reverb_Chamber\ACF.csv'
